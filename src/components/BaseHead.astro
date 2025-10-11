@@ -1,6 +1,5 @@
 ---
 import { ClientRouter } from "astro:transitions";
-import Analytics from "./Analytics.astro";
 interface Props {
   title: string;
   description?: string;
@@ -17,8 +16,6 @@ const {
  * This component includes various meta tags, analytics, and other head elements.
  */ -->
 <head>
-  <!-- Google tag (gtag.js) -->
-  <Analytics />
   <meta charset="UTF-8" />
   <meta name="description" content=`${description}` />
   <meta
