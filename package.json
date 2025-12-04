@@ -10,13 +10,13 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/check": "^0.9.4",
+    "@astrojs/check": "0.9.6",
     "@astrojs/sitemap": "3.6.0",
     "@astrojs/tailwind": "6.0.2",
     "@fontsource-variable/eb-garamond": "^5.1.2",
     "@fontsource/vt323": "^5.1.1",
     "@types/alpinejs": "^3.13.11",
-    "astro": "5.14.4",
+    "astro": "5.16.4",
     "astro-icon": "^1.1.5",
     "autoprefixer": "^10.4.20",
     "cssnano": "^6.1.2",
