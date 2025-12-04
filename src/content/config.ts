@@ -53,20 +53,21 @@ export const collections = {
       logo: z.string().optional(),
     }),
   }),
-  blog: defineCollection({
-    type: "content",
-    schema: z.object({
-      title: z.string(),
-      datePublished: z.date().refine((date) => date <= new Date(), {
-        message: "Date can't be in the future",
-      }),
-      language: z.enum(languages).optional(),
-      description: z
-        .string()
-        .max(150, "Description must be shorter than 150 chars")
-        .optional(),
-      image: z.string().optional(),
-      alt: z.string().optional(),
-    }),
-  }),
+  // NOTE: Blog collection is currently not used
+  // blog: defineCollection({
+  //   type: "content",
+  //   schema: z.object({
+  //     title: z.string(),
+  //     datePublished: z.date().refine((date) => date <= new Date(), {
+  //       message: "Date can't be in the future",
+  //     }),
+  //     language: z.enum(languages).optional(),
+  //     description: z
+  //       .string()
+  //       .max(150, "Description must be shorter than 150 chars")
+  //       .optional(),
+  //     image: z.string().optional(),
+  //     alt: z.string().optional(),
+  //   }),
+  // }),
 };

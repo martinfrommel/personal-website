@@ -2,23 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-/**
- * Styles for the selected elements.
- *
- * [x-cloak] - Hides the element with the attribute 'x-cloak'.
- * html - Applies flexbox layout with full height and width, centered content, and hidden horizontal overflow.
- * body - Sets the background image, blend mode, and applies various utility classes for background color, font, and text color.
- * h1, h2, h3 - Applies serif font to heading elements.
- * h4, h5, h6 - Applies sans-serif font to heading elements.
- * a - Applies transition and hover styles for links.
- * #monogram - Applies fill color to the element with the ID 'monogram'.
- * code - Sets the font family for code elements.
- * .menuItem - Applies flexbox layout and transition styles for menu items.
- */
 
 @layer components {
   .btn {
-    @apply rounded-md bg-dark/20 px-4 py-2 font-mono text-lg backdrop-blur-md transition-all duration-100 ease-in-out hover:border-b-2 hover:border-b-dark active:scale-95  dark:bg-light/20 dark:backdrop-blur-md hover:dark:border-b-light;
+    @apply rounded-md bg-dark/20 px-4 py-2 font-mono text-lg backdrop-blur-md transition-all duration-100 ease-in-out hover:border-b-2 hover:border-b-dark active:scale-95 dark:bg-light/20 dark:backdrop-blur-md hover:dark:border-b-light;
   }
 }
 
@@ -31,9 +18,8 @@ html {
 }
 
 body {
-  background: url("./assets/bg/bgDoodles.svg") center/cover fixed;
   background-blend-mode: overlay;
-  @apply bg-light font-sans  text-base text-dark selection:bg-dark/20 dark:bg-dark dark:text-light dark:selection:bg-light/20;
+  @apply bg-light font-sans text-base text-dark selection:bg-dark/20 dark:bg-dark dark:text-light dark:selection:bg-light/20;
 }
 
 h1,
@@ -61,7 +47,7 @@ a {
 }
 
 p {
-  @apply text-lg  text-dark dark:text-light;
+  @apply text-lg text-dark dark:text-light;
 }
 
 li:has(> a) {
